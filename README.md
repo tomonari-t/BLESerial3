@@ -1,5 +1,6 @@
 # BLESerial3
 BLESerial3をiOSアプリから使うためのサンプルコードです。
+
 [BLEモジュールBLESerial３の紹介 - 浅草ギ研](http://www.robotsfx.com/robot/BLESerial3.html)
 
 ## フォルダ構成
@@ -11,4 +12,4 @@ BLESerial3をiOSアプリから使うためのサンプルコードです。
 
 ### リポジトリをPCにダウンロードして使ってください
 
-  % git clone git@github.com:tomonari-t/BLESerial3.git
+  '% git clone git@github.com:tomonari-t/BLESerial3.git'
