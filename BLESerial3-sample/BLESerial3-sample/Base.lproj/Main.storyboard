@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BLESerial3_sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No BLE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aTV-YW-3ou">
+                                <rect key="frame" x="66" y="70" width="243" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ii-ha-Xk5">
+                                <rect key="frame" x="102.5" y="155" width="170" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="3H2-lE-m3w"/>
+                                    <constraint firstAttribute="height" constant="30" id="l2A-4f-8aX"/>
+                                </constraints>
+                                <state key="normal" title="Connect BLE"/>
+                                <connections>
+                                    <action selector="connectBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D7H-6L-uSZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="unZ-yt-HCp">
+                                <rect key="frame" x="102.5" y="225" width="170" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="5qw-BA-Qpg"/>
+                                    <constraint firstAttribute="height" constant="30" id="ahO-FI-sQf"/>
+                                </constraints>
+                                <state key="normal" title="Send &quot;1&quot;"/>
+                                <connections>
+                                    <action selector="send1BtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SUm-iU-z62"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDJ-u4-EoX">
+                                <rect key="frame" x="102.5" y="295" width="170" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="WqS-8f-9lH"/>
+                                </constraints>
+                                <state key="normal" title="Send &quot;2&quot;"/>
+                                <connections>
+                                    <action selector="send2BtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UEz-R6-2UC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2ii-ha-Xk5" firstAttribute="top" secondItem="aTV-YW-3ou" secondAttribute="bottom" constant="64" id="2bK-jR-p0X"/>
+                            <constraint firstItem="aTV-YW-3ou" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="6al-Xi-mEv"/>
+                            <constraint firstItem="unZ-yt-HCp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Eap-LO-tq2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aTV-YW-3ou" secondAttribute="trailing" constant="50" id="HeR-Xm-TV9"/>
+                            <constraint firstItem="aTV-YW-3ou" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="IKf-bf-Vhm"/>
+                            <constraint firstItem="JDJ-u4-EoX" firstAttribute="top" secondItem="unZ-yt-HCp" secondAttribute="bottom" constant="40" id="TWo-6M-7Vv"/>
+                            <constraint firstItem="JDJ-u4-EoX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U6p-1h-RHc"/>
+                            <constraint firstItem="unZ-yt-HCp" firstAttribute="top" secondItem="2ii-ha-Xk5" secondAttribute="bottom" constant="40" id="UMa-we-8hc"/>
+                            <constraint firstItem="2ii-ha-Xk5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gR3-lP-EpA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="SSIDUILabel" destination="aTV-YW-3ou" id="aSf-Cq-EnJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>
